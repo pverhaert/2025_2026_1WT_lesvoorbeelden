@@ -1,0 +1,8 @@
+#outline {
+    width: 95%;
+    border: none;
+}
+
+nav, footer {
+    display: none;
+}
