@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --donkerrood: darkred;
+    --yellow_1: #f3dc9e;
+    --yellow_2: #cca958;
+}
+
+html {
+    font-size: 16px;
+    min-height: 100vh;  /*100% van viewport height*/
+    /*transition: 1s;*/
+}
+
+html:hover {
+    /*transform: rotate(360deg);*/
+}
+
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--yellow_1);
+    background-image: linear-gradient(180deg, var(--yellow_1), var(--yellow_2));
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat Underline", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    color: var(--donkerrood);
+}
+
+
+main a {
+    color: red;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #b73d3d;
+    text-decoration: underline;
+}
+
+/* Navigatie */
+/* CSS nesting -> zie semester 2*/
+nav {
+    text-align: center;
+    font-size: 1.2rem;
+    a {
+        border: 1px solid black;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        color: var(--donkerrood);
+        background-color: #fff;
+        /* zie kerstvakantie */
+        transition: .5s;
+        &:hover {
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            color: white;
+            background-color: var(--donkerrood);
+        }
+    }
+}
+
+/* list */
+li {   /* mag ook ul zijn ipv li */
+    list-style-type: ' ✔️ ';
+}
+
+li:nth-child(even) {
+    list-style-type: ' 🌲 ';
+}
+
+/* images */
+figure {
+
+}
+
+figure img {
+    margin: 1rem;
+    box-shadow: .5rem .5rem .6rem rgba(0,0,0,.4);
+    transition: 1s;
+}
+
+figure img:hover {
+    border-radius: 50%;
+    transform: rotate(360deg) scale(1.2);
+    filter: grayscale(100%);
+}
+
+figure figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: .7rem;
+}
+
+/* table */
+table {
+    border: solid 1px black;
+    border-collapse: collapse;
+    tr {
+        border: solid 1px black;
+    }
+}
+
+
+table th, table td {
+    padding: .5rem 1rem;
+}
+
+table thead {
+    background-color: darkred;
+    color: white;
+}
+
+table tbody tr:hover {
+    background-color: #e8d9b3;
+}
+
+table caption {
+    caption-side: bottom;
+}
+
+#outline {
+    max-width: 800px;
+    border: solid 1px black;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, .25);
+}
+
+/* extra fading images: image 1 -> image 2 */
+.fading-images {
+    /*border: 1px solid #000;*/
+    position: relative;
+    /*width: 300px;*/
+    height: 300px;
+
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 1s;
+    }
+
+    img.boven:hover {
+        opacity: 0;
+    }
+}
+
+.groen {
+    color: green;
+    font-weight: bold;
+}
+
+/* print */
+
+@media print {
+    body {
+        background: none;
+    }
+    #outline {
+        max-width: 95%;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    img {
+        width: 15vw;
+    }
+
+    nav, .fading-images {
+        display: none;
+    }
+}

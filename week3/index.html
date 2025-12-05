@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inleiding tot CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="outline">
+    <header>
+        <h1>Cascading Style Sheets (CSS)</h1>
+        <nav>
+            <a href="../index.html">Homepage</a>
+        </nav>
+    </header>
+
+    <main>
+        <p>
+            Cascading Style Sheets, beter bekend als
+            <a href="https://nl.wikipedia.org/wiki/Cascading_Style_Sheets" target="external">CSS</a>, is een stijlbladtaal die
+            wordt gebruikt om de vormgeving en
+            lay-out
+            van webpagina's te beschrijven. Terwijl HTML
+            (<a href="https://nl.wikipedia.org/wiki/HyperText_Markup_Language" target="external">HyperText Markup Language</a>)
+            wordt gebruikt om de structuur en
+            inhoud
+            van een document te bepalen, zorgt CSS voor de visuele presentatie, zoals kleuren, lettertypes en de
+            positionering
+            van elementen.
+        </p>
+        <div class="fading-images">
+            <img src="assets/css_1.png" alt="top image">
+            <img src="assets/css_4.png" alt="bottom image" class="boven">
+        </div>
+        <h2>De basisprincipes van CSS</h2>
+        <p>
+            Het belangrijkste doel van CSS is het scheiden van inhoud (HTML) en presentatie. Dit maakt het mogelijk om
+            de
+            lay-out van meerdere pagina's tegelijkertijd te wijzigen door slechts één bestand aan te passen. Dit
+            verbetert
+            de
+            toegankelijkheid, biedt meer flexibiliteit en vermindert de complexiteit van de inhoud.
+        </p>
+        <h3>Hoe ziet een CSS-regel eruit?</h3>
+        <p>
+            Een CSS-regel bestaat uit een selector en een declaratieblok. De selector wijst naar het HTML-element dat je
+            wilt
+            stijlen. Het declaratieblok bevat één of meer declaraties, gescheiden door puntkomma's. Elke declaratie
+            bestaat
+            uit
+            een CSS-eigenschap en een waarde.
+        </p>
+        <figure>
+            <img src="assets/css_1.png" alt="CSS figuur 1">
+            <img src="assets/css_2.png" alt="CSS figuur 2">
+            <img src="assets/css_3.png" alt="CSS figuur 3">
+            <img src="assets/css_4.png" alt="CSS figuur 4">
+            <figcaption>Figuur 1: Enkele afbeeldingen over CSS.</figcaption>
+        </figure>
+        <h2>Belangrijke CSS-concepten</h2>
+        <p>
+            Om CSS goed te begrijpen, zijn er een aantal kernconcepten die elke webontwikkelaar moet beheersen.
+            Hieronder
+            volgt
+            een opsomming van de meest cruciale onderdelen:
+        </p>
+        <ul>
+            <li><strong>Selectors:</strong> De manier waarop specifieke <span class="groen"> HTML-elementen </span> worden gekozen (bijvoorbeeld via
+                class,
+                id of elementnaam).
+            </li>
+            <li><strong>Het Box Model:</strong> Het concept dat elk element wordt omringd door padding, borders en
+                marges.
+            </li>
+            <li><strong>Flexbox:</strong> Een lay-outmodel ontworpen voor het verdelen van ruimte tussen items in een
+                container.
+            </li>
+            <li><strong>CSS Grid:</strong> Een krachtig tweedimensionaal lay-outsysteem voor het web.</li>
+            <li><strong>Responsiveness:</strong> Het gebruik van media queries om pagina's aan te passen aan
+                verschillende
+                schermformaten.
+            </li>
+        </ul>
+        <h2>Ontwikkeling en Versies</h2>
+        <p>
+            CSS is door de jaren heen sterk geëvolueerd. Wat begon als een eenvoudige manier om tekst op te maken, is
+            uitgegroeid tot een complexe taal waarmee animaties en geavanceerde lay-outs mogelijk zijn.
+        </p>
+        <h3>Versieoverzicht</h3>
+        <table>
+            <caption>Tabel 1: De evolutie van CSS-versies door de jaren heen</caption>
+            <thead>
+            <tr>
+                <th>Versie</th>
+                <th>Jaartal (W3C Rec)</th>
+                <th>Belangrijkste toevoegingen</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>CSS 1</td>
+                <td>1996</td>
+                <td>Basis lettertypes, kleuren en uitlijning.</td>
+            </tr>
+            <tr>
+                <td>CSS 2</td>
+                <td>1998</td>
+                <td>Positionering (absolute/relative), z-index en media types.</td>
+            </tr>
+            <tr>
+                <td>CSS 3</td>
+                <td>1999 - heden</td>
+                <td>Modules, Flexbox, Grid, Animaties, Schaduwen en meer.</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>
+            Tegenwoordig wordt er niet meer gesproken over "CSS4" als een enkele versie, maar werkt de W3C (World Wide
+            Web
+            Consortium) aan losse modules die onafhankelijk van elkaar worden geüpdatet.
+        </p>
+    </main>
+</div>
+</body>
+</html>
