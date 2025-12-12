@@ -1,0 +1,181 @@
+/* Font Awesome: https://fontawesome.com/icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css');
+/* Bootstrap Icons: https://icons.getbootstrap.com/ */
+@import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css";
+/* Google Fonts: Josefin Sans: https://fonts.google.com/specimen/Josefin+Sans */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    color: #2b2b2b;
+    /*background-image: url(../assets/grid_1rem.svg), url(../assets/grid_100px.svg), url(../assets/line_600_800px.svg);*/
+}
+
+h1, h2, p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+p {
+    text-align: justify;
+}
+
+main {
+    margin: 1rem;
+}
+
+footer {
+    font-size: .8rem;
+    border-top: 1px solid #565454;
+    padding-top: 1rem;
+}
+
+footer div {
+    float: right;
+}
+
+.fa-solid, .bi {
+    margin-right: .5rem;
+}
+
+.fa-house-user, .bi-house-check-fill {
+    color: darkred;
+}
+
+#md, #lg {
+    display: none;
+}
+
+.card {
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    padding: 1rem 6rem 1rem 1rem;
+    border-radius: .5rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+
+
+    background-image: url(../assets/img1.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 5.5rem;
+    cursor: zoom-in;
+    transition: transform .3s, background-color 1s .3s;
+}
+
+.card:hover {
+    transform: scale(1.07);
+    background-color: #eff4ff;
+}
+
+.card2 {
+    background-image: url(../assets/img2.png);
+}
+
+.card2:hover {
+    background-color: #fafabb;
+}
+
+.card3 {
+    background-image: url(../assets/img3.png);
+}
+
+.card3:hover {
+    background-color: #f4bbba;
+}
+
+@media (min-width: 600px) {
+    .card {
+        cursor: zoom-out;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .card:hover {
+        transform: scale(.95);
+    }
+
+    #sm {
+        display: none;
+    }
+
+    #md {
+        display: inline;
+    }
+}
+
+@media (min-width: 800px) {
+    #md {
+        display: none;
+    }
+
+    #lg {
+        display: inline;
+    }
+}
+
+@media print {
+    body {
+        background-image: none;
+    }
+
+    .card {
+        border: none;
+        box-shadow: none;
+        margin: 0;
+        padding: 0 6rem 0 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

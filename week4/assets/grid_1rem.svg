@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <style>
+        .grid {
+            stroke: darkred;
+            stroke-width: 1;
+            stroke-dasharray: 1,7;
+        }
+    </style>
+    <line x1="16" y1="0" x2="16" y2="16" class="grid"/>
+    <line x1="0" y1="16" x2="16" y2="16" class="grid"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="100">
+    <style>
+        .line {
+            stroke: darkcyan;
+            stroke-width: 2;
+        }
+    </style>
+    <line x1="600" y1="0" x2="600" y2="100" class="line"/>
+    <line x1="799" y1="0" x2="799" y2="100" class="line"/>
+</svg>
