@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #caf4ef;
+}
+nav {
+    background-color: rgba(234, 244, 202, 0.82);
+    padding: .5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(2px);
+}
+main {
+    flex-grow: 1;
+    padding: .5rem;
+    margin-top: 3rem; /* Adjust this value to match the height of your nav */
+}
+footer {
+    background-color: #cad6f4;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
